@@ -1,0 +1,30 @@
+<svg width="400" height="200" viewBox="0 0 320 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brand-grad" x1="20" y1="60" x2="220" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+
+  <!-- ECG Line Flowing into Bridge -->
+  <path d="M20 80H50L60 40L75 120L90 20L105 80H125C135 80 145 60 160 45C175 30 205 30 220 45C235 60 235 80 235 80H260" stroke="url(#brand-grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Bridge Details -->
+  <g transform="translate(150, 40)">
+     <!-- Main Arch Trusses -->
+     <path d="M10 40C20 15 80 15 90 40" stroke="url(#brand-grad)" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+     <line x1="30" y1="20" x2="30" y2="40" stroke="url(#brand-grad)" stroke-width="3" stroke-linecap="round" />
+     <line x1="50" y1="15" x2="50" y2="40" stroke="url(#brand-grad)" stroke-width="3" stroke-linecap="round" />
+     <line x1="70" y1="20" x2="70" y2="40" stroke="url(#brand-grad)" stroke-width="3" stroke-linecap="round" />
+     
+     <!-- Base Support -->
+     <rect x="15" y="40" width="10" height="20" fill="url(#brand-grad)" rx="2" />
+     <rect x="75" y="40" width="10" height="20" fill="url(#brand-grad)" rx="2" />
+  </g>
+
+  <!-- Branding Text (White for Dark Backgrounds) -->
+  <text x="160" y="125" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="28" fill="#FFFFFF">SWASTHYA SETU</text>
+  <text x="160" y="150" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="12" fill="#CBD5E1" letter-spacing="5">HEALTHCARE PLATFORM</text>
+</svg>
+
+

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-gray-100 font-sans antialiased;
+    cursor: default;
+  }
+
+  /* Remove the typing I-beam from static text elements */
+  h1, h2, h3, h4, h5, h6, p, span, label, div, li, a, button {
+    cursor: default;
+  }
+
+  /* Ensure interactive elements still have correct cursors */
+  input, textarea {
+    cursor: text !important;
+  }
+
+  a, button, select, [role="button"], .cursor-pointer {
+    cursor: pointer !important;
+  }
+
+  /* Ensure caret only blinks in inputs/textareas to avoid 'Caret Browsing' artifacts */
+  *:not(input):not(textarea):not([contenteditable="true"]) {
+    caret-color: transparent !important;
+  }
+
+  input:focus, textarea:focus, [contenteditable="true"]:focus {
+    caret-color: auto; /* Standard blinking caret for inputs */
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-dark-card/80 backdrop-blur-lg border border-dark-border rounded-2xl shadow-xl transition-all duration-300;
+  }
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f1c; 
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #374151; 
+}

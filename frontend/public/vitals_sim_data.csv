@@ -1,0 +1,7 @@
+heartRate,temperature,spo2,label
+72,36.6,98,Normal
+85,37.1,97,Normal
+132,37.5,96,High Heart Rate (Warning)
+92,39.4,95,Fever (Warning)
+78,36.8,89,Low Oxygen (Danger)
+145,39.8,92,Critical (Danger)
