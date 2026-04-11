@@ -63,6 +63,11 @@ app.use('/api/chat', chatRoutes);
 app.use('/api/aichat', aiChatRoutes);
 app.use('/api/search', searchRoutes);
 
+// Health Check Endpoint
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ status: 'OK', timestamp: new Date().toISOString() });
+});
+
 app.get('/', (req, res) => {
   res.send('Swasthya Setu API is running...');
 });
